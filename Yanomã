@@ -1,0 +1,101 @@
+1)B
+2)A
+3)D
+4)D
+5)B
+6)B
+
+# Questões dissertativas
+
+**7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
+![Uma imagem](assets/image.png)
+______
+Resposta:
+Recebe variável idade 
+Se idade é menor que 16 
+Escrava: não pode votar
+Senão, se idade maior ou igual a 16 e menor que 18
+Escreva voto facultativo
+Se não 
+Escreva voto obrigatório
+
+
+**8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
+
+```
+
+Classe FormaGeometrica:
+    Atributos:
+        - cor
+
+    Método Construtor(cor):
+        Define o valor do atributo cor com o valor passado como parâmetro.
+
+    Método CalcularArea():
+        # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
+
+classe retângulo herda da classe FormaGeométrica
+Atributos:
+-Herda cor
+-Comprimento
+-Largura
+Método cacularArea():
+implementação: A cor escolhida é atributo cor, sua área é atributo comprimento vezes atributo largura
+
+Classe circulo herda atributos de FormaGeométrica
+Atributos:
+-Herda cor
+-Raio
+-pi
+Método cacularArea():
+implementação: A cor escolhida é atributo cor, sua área é atributo raio ao quadrado vezes atributo pi
+
+constante calculadora atribui os seguintes valores aos atributos da classe retângulo(preto, 3 , 4)
+constante calculadora1 atribui os seguintes valores aos atributos da classe circulo(preto, 3 , 3,14)
+Escreva a Função calcularArea() usando os atributos definidos de calculadora
+Escreva a Função calcularArea() usando os atributos definidos de calculadora1
+
+
+```
+
+______
+
+**9)** Você foi contratado(a) como estagiário(a) da Tesla e está participando do desenvolvimento de um programa para simular o desempenho de um carro elétrico em uma corrida. Seu objetivo é determinar em quantos minutos o carro levará para completar uma determinada distância, levando em consideração uma velocidade inicial e uma taxa de aceleração constante. No entanto, você deseja garantir que o carro não exceda uma velocidade máxima nem que a corrida demore mais do que um tempo máximo. Implemente a lógica dessa simulação em pseudocódigo.
+
+Considere a fórumla de atualização velocidade:
+```
+    Velocidade inicial do carro é 0
+Aceleração do carro é de 5 metros por segundo
+velocidade do carro é igual a velocidadeInicial + aceleracao*tempo
+Velocidade máxima é igual a 90 metros por segundo
+Tempo máximo é igual a 20 minutos
+
+enquanto velocidade do carro é menor que 90 metros por segundo
+some 1 segundo no tempo
+
+para (tempo=0, tempo menor que tempo maximo, continue a corrida(adicionando 1 minuto no tempo por loop))
+Desta forma o tempo da corrida terá no máximo 20 minutos 
+
+```
+
+______
+
+**10)** Uma matriz é uma coleção bidimensional de elementos, organizados em linhas e colunas. A seguir, é fornecida a implementação da função SomaDeMatrizes(matrizA, matrizB), que calcula a soma de duas matrizes. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação de duas matrizes.
+
+```
+matrizA <- [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+Função MultiplicaçãoDeMatrizes(matrizA, matrizB):
+    Verifica se a quantidade de linhas da matrizA tem a mesma quantidade de colunas da matrizB, ou vice versa
+    Se quantidade de linhas(matrizA) ≠ quantidade de colunas(matrizB) então:
+        Retornar "As matrizes não podem ser multiplicadas. Elas têm dimensões diferentes das necessárias para multiplicação."
+    Senão:
+        linhas <- tamanho(matrizA)
+        colunas <- tamanho(matrizB[0]) 
+        matrizResultado <- novaMatriz(linhas, colunas)
+matrizMutiplicação <- MultiplicaçãoDeMatrizes(matrizA, matrizB)
+Escrever("Multiplicação das matrizes:")
+ImprimirMatriz(matrizMultiplicação)
+
+```
